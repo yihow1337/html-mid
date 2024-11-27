@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game 2024</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+            background: #f0f0f0;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        .controls button {
+            margin: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tetris Game</h1>
+    <canvas id="gameCanvas" width="300" height="600"></canvas>
+    <div class="controls">
+        <button onclick="startGame()">Start</button>
+        <button onclick="pauseGame()">Pause</button>
+        <button onclick="resetGame()">Reset</button>
+        <button onclick="moveLeft()">Left</button>
+        <button onclick="moveDownManually()">Move Down</button>
+        <button onclick="moveRight()">Right</button>
+        <button onclick="rotateBlock()">Rotate</button>
+        <button onclick="increaseSpeed()">Speed +</button>
+        <button onclick="decreaseSpeed()">Speed -</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
